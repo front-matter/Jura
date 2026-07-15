@@ -16,11 +16,15 @@ Tested with the following coffee machines, but should support others:
 
 ## Installation
 
-[HACS](https://hacs.xyz/) > Integrations > 3 dots (upper top corner) > Custom repositories > URL: `AlexxIT/Jura`, Category: Integration > Add > wait > Jura > Install
+[![](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=AlexxIT&repository=Jura&category=Integration)
 
-Or manually copy `jura` folder from [latest release](https://github.com/AlexxIT/Jura/releases/latest) to `/config/custom_components` folder.
+[HACS](https://hacs.xyz/) > Menu > Custom repositories > URL: `AlexxIT/Jura`, Category: Integration > Add > Install
+
+Or manually copy `jura` folder from [latest release](https://github.com/AlexxIT/Jura/releases/latest) to `custom_components` folder in your config folder.
 
 ## Configuration
+
+[![](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=jura)
 
 1. Add default [Bluetooth](https://www.home-assistant.io/integrations/bluetooth/) integration. 
 
