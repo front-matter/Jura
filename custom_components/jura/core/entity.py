@@ -28,11 +28,13 @@ class JuraEntity(Entity):
         self._attr_name = device.name + " " + attr.replace("_", " ").title()
         self._attr_unique_id = device.mac.replace(":", "") + "_" + attr
 
-        self.entity_id = DOMAIN + "." + sanitize(self._attr_unique_id)
-
         self.internal_update()
 
         device.register_update(attr, self.internal_update)
+
+    @property
+    def suggested_object_id(self) -> str | None:
+        return sanitize(self.unique_id)
 
     def internal_update(self):
         pass
